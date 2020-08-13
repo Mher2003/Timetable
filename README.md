@@ -1,2 +1,2 @@
 # Timetable
-Timetable with Node JS backend and React JS frontend
+Timetable with Node JS
