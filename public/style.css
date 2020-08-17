@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Webly Sleek UI",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
+}
+
+header {
+    overflow: auto;
+    text-align: center;
+}
+
+#title {
+    padding: 3vh 0;
+}
+
+#container {
+    margin: 10px;
+}
+
+#selectors {
+    text-align: center;
+}
+
+#selectors select {
+    height: 30px;
+}
+
+#timeDiv {
+    text-align: center;
+}
+
+#weekday{
+    padding: 10px;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#before{
+    float: left;
+}
+
+#after{
+    float: right;
+}
+
+textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+}
+
+td {
+    border: 1px solid;
+    text-align: center;
+    padding: 8px;
+    height: 10px;
+}
+
+#pass{
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#submit{
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Code for cool mode */
+@media (prefers-color-scheme: dark) { 
+    body{
+        background-color: #121212;
+        color: white;
+    }
+
+    td{
+        border-color: #dddddd;
+    }
+
+    #title{
+        color: white
+    }
+
+    header{
+        background-color: #6200EE;
+    }
+
+    #selectors select{
+        border: 1px solid white;
+        color: black;
+        background-color: white;
+    }
+    textarea{
+        color: white;
+    }
+    #submit{
+        background-color: #6200EE;
+        color: white;
+    }
+}
+
+/* Who even uses light mode? */
+@media (prefers-color-scheme: light) { 
+    body{
+        background-color: white;
+        color: black;
+    }
+    
+    td{
+        border-color: #222222;
+    }
+
+    #title{
+        color: white;
+    }
+
+    header{
+        background-color: #ff8000;
+    }
+
+    #selectors select{
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+    textarea{
+        color: black;
+    }
+
+    #submit{
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    table{
+        width: 200px;
+    }
+
+    select{
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    table{
+        width: 335px;
+    }
+
+    select {
+        width: 105px;
+    }
+}
+
+/*
+@media screen and (orientation:portrait){
+    .sideTables{
+        display: none;
+    }
+}
+
+@media screen and (orientation:landscape){
+    .sideTables{
+        display: block;
+    }
+}
+*/

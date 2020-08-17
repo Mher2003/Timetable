@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <title>Timetable</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Դասացուցակ</h1>
+    </header>
+
+    <div id="container">
+        <div id="selectors">
+
+            <select name="grade" id="grade" onchange="selectChange(true)">
+                <option value="0">Դասարան</option>
+                <option value="10">10-րդ</option>
+                <option value="11">11-րդ</option>
+                <option value="12">12-րդ</option>
+            </select>
+            
+            <select name="class" id="class" onchange="selectChange(true)">
+                <option value="0">Խումբ</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="day" id="day" onchange="selectChange(true)">
+                <option value="0">Օր</option>
+                <option value="1">Երկուշաբթի</option>
+                <option value="2">Երեքշաբթի</option>
+                <option value="3">Չորեքշաբթի</option>
+                <option value="4">Հինգշաբթի</option>
+                <option value="5">Ուրբաթ</option>
+                <option value="6">Շաբաթ</option>
+            </select>
+        </div>
+    
+        <div id="timeDiv">
+
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
