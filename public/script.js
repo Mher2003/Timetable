@@ -68,8 +68,8 @@ async function getTimetable(Grade, Class, Day, EditMode){
         timetable += "</table>"
         let submit = "<div id='iden'>"
         submit += "<label id='response'></label>"
-        submit += `Password:<input type='password' id='pass' placeholder='Enter password' autocomplete='off' readonly onfocus ="this.removeAttribute('readonly');" ><br>`
-        submit += "<button id='submit' onClick='updateTimetable()'>Update Timetable</button>"
+        submit += `Գաղտնաբառ:<input type='password' id='pass' placeholder='Գրել գաղտնաբառը' autocomplete='off' readonly onfocus ="this.removeAttribute('readonly');" ><br>`
+        submit += "<button id='submit' onClick='updateTimetable()'>Թարմացնել</button>"
         submit += "</div>"
 
         timetable += submit
